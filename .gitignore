@@ -1,5 +1,11 @@
 
-# Created by https://www.gitignore.io/api/node,macos,linux,dropbox,windows,phpstorm
+### Composer ###
+composer.phar
+/vendor/
+
+# Commit your application's lock file http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file
+# You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
+# composer.lock
 
 ### Dropbox ###
 # Dropbox settings and caches
@@ -193,4 +199,20 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.gitignore.io/api/node,macos,linux,dropbox,windows,phpstorm
+### WordPress ###
+/support/wordpress/wp-config.php
+/support/wordpress/wp-content/advanced-cache.php
+/support/wordpress/wp-content/backup-db/
+/support/wordpress/wp-content/backups/
+/support/wordpress/wp-content/blogs.dir/
+/support/wordpress/wp-content/cache/
+/support/wordpress/wp-content/upgrade/
+/support/wordpress/wp-content/uploads/
+/support/wordpress/wp-content/wp-cache-config.php
+/support/wordpress/wp-content/plugins/hello.php
+
+/support/wordpress/.htaccess
+/support/wordpress/license.txt
+/support/wordpress/readme.html
+/support/wordpress/sitemap.xml
+/support/wordpress/sitemap.xml.gz
