@@ -2,7 +2,9 @@
     "name": "odelrio/standalone-wordpress-restful-api",
     "type": "project",
     "require": {
-        "silex/silex": "^2.1"
+        "silex/silex": "^2.1",
+        "doctrine/dbal": "~2.2",
+        "doctrine/orm": "*"
     },
     "license": "MIT",
     "authors": [
@@ -14,5 +16,8 @@
             "name": "Oriol del Rio",
             "email": "contact@odelrio.com"
         }
-    ]
+    ],
+    "require-dev": {
+        "symfony/console": "^3.2"
+    }
 }
