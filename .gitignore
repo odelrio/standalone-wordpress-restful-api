@@ -210,6 +210,8 @@ $RECYCLE.BIN/
 /support/wordpress/wp-content/uploads/
 /support/wordpress/wp-content/wp-cache-config.php
 /support/wordpress/wp-content/plugins/hello.php
+/support/wordpress/wp-content/database/wordpress-local.sqlite
+/support/wordpress/wp-content/database/wordpress.sqlite
 
 /support/wordpress/.htaccess
 /support/wordpress/license.txt
