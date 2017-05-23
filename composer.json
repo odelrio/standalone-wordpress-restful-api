@@ -20,5 +20,8 @@
             "name": "Oriol del Rio",
             "email": "contact@odelrio.com"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-0": {"": "src/"}
+    }
 }
