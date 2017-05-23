@@ -4,10 +4,11 @@
     "require": {
         "silex/silex": "^2.1",
         "dflydev/doctrine-orm-service-provider": "^2.0",
-        "doctrine/orm": "^2.5"
+        "doctrine/orm": "^2.5.5"
     },
     "require-dev": {
-        "symfony/console": "^3.2"
+        "symfony/console": "^3.2",
+        "symfony/yaml": "2.*"
     },
     "license": "MIT",
     "authors": [
