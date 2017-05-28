@@ -1,0 +1,43 @@
+UnnamedProject\Domain\Model\Terms:
+    type: entity
+    table: wp_terms
+    indexes:
+        slug:
+            columns:
+                - slug
+        name:
+            columns:
+                - name
+    id:
+        termId:
+            type: bigint
+            nullable: false
+            options:
+                unsigned: true
+            id: true
+            column: term_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        name:
+            type: string
+            nullable: false
+            length: 200
+            options:
+                fixed: false
+                default: ''
+        slug:
+            type: string
+            nullable: false
+            length: 200
+            options:
+                fixed: false
+                default: ''
+        termGroup:
+            type: bigint
+            nullable: false
+            options:
+                unsigned: false
+                default: '0'
+            column: term_group
+    lifecycleCallbacks: {  }

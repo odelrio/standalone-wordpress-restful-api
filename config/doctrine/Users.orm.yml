@@ -1,0 +1,94 @@
+UnnamedProject\Domain\Model\Users:
+    type: entity
+    table: wp_users
+    indexes:
+        user_login_key:
+            columns:
+                - user_login
+        user_nicename:
+            columns:
+                - user_nicename
+        user_email:
+            columns:
+                - user_email
+    id:
+        id:
+            type: bigint
+            nullable: false
+            options:
+                unsigned: true
+            id: true
+            column: ID
+            generator:
+                strategy: IDENTITY
+    fields:
+        userLogin:
+            type: string
+            nullable: false
+            length: 60
+            options:
+                fixed: false
+                default: ''
+            column: user_login
+        userPass:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+                default: ''
+            column: user_pass
+        userNicename:
+            type: string
+            nullable: false
+            length: 50
+            options:
+                fixed: false
+                default: ''
+            column: user_nicename
+        userEmail:
+            type: string
+            nullable: false
+            length: 100
+            options:
+                fixed: false
+                default: ''
+            column: user_email
+        userUrl:
+            type: string
+            nullable: false
+            length: 100
+            options:
+                fixed: false
+                default: ''
+            column: user_url
+        userRegistered:
+            type: datetime
+            nullable: false
+            options:
+                default: '0000-00-00 00:00:00'
+            column: user_registered
+        userActivationKey:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+                default: ''
+            column: user_activation_key
+        userStatus:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+                default: '0'
+            column: user_status
+        displayName:
+            type: string
+            nullable: false
+            length: 250
+            options:
+                fixed: false
+                default: ''
+            column: display_name
+    lifecycleCallbacks: {  }

@@ -1,0 +1,110 @@
+UnnamedProject\Domain\Model\Links:
+    type: entity
+    table: wp_links
+    indexes:
+        link_visible:
+            columns:
+                - link_visible
+    id:
+        linkId:
+            type: bigint
+            nullable: false
+            options:
+                unsigned: true
+            id: true
+            column: link_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        linkUrl:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+                default: ''
+            column: link_url
+        linkName:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+                default: ''
+            column: link_name
+        linkImage:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+                default: ''
+            column: link_image
+        linkTarget:
+            type: string
+            nullable: false
+            length: 25
+            options:
+                fixed: false
+                default: ''
+            column: link_target
+        linkDescription:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+                default: ''
+            column: link_description
+        linkVisible:
+            type: string
+            nullable: false
+            length: 20
+            options:
+                fixed: false
+                default: 'Y'
+            column: link_visible
+        linkOwner:
+            type: bigint
+            nullable: false
+            options:
+                unsigned: true
+                default: '1'
+            column: link_owner
+        linkRating:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+                default: '0'
+            column: link_rating
+        linkUpdated:
+            type: datetime
+            nullable: false
+            options:
+                default: '0000-00-00 00:00:00'
+            column: link_updated
+        linkRel:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+                default: ''
+            column: link_rel
+        linkNotes:
+            type: text
+            nullable: false
+            length: 16777215
+            options:
+                fixed: false
+            column: link_notes
+        linkRss:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+                default: ''
+            column: link_rss
+    lifecycleCallbacks: {  }

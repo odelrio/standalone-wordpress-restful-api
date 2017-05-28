@@ -1,0 +1,56 @@
+UnnamedProject\Domain\Model\TermTaxonomy:
+    type: entity
+    table: wp_term_taxonomy
+    indexes:
+        taxonomy:
+            columns:
+                - taxonomy
+    uniqueConstraints:
+        term_id_taxonomy:
+            columns:
+                - term_id
+                - taxonomy
+    id:
+        termTaxonomyId:
+            type: bigint
+            nullable: false
+            options:
+                unsigned: true
+            id: true
+            column: term_taxonomy_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        termId:
+            type: bigint
+            nullable: false
+            options:
+                unsigned: true
+                default: '0'
+            column: term_id
+        taxonomy:
+            type: string
+            nullable: false
+            length: 32
+            options:
+                fixed: false
+                default: ''
+        description:
+            type: text
+            nullable: false
+            length: null
+            options:
+                fixed: false
+        parent:
+            type: bigint
+            nullable: false
+            options:
+                unsigned: true
+                default: '0'
+        count:
+            type: bigint
+            nullable: false
+            options:
+                unsigned: false
+                default: '0'
+    lifecycleCallbacks: {  }
