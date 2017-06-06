@@ -2,8 +2,9 @@
 
 use Doctrine\ORM\Tools\Console\ConsoleRunner;
 
-require_once __DIR__ . '/../src/UnnamedProject/bootstrap.php';
+require_once __DIR__ . '/../vendor/autoload.php';
+require_once __DIR__ . '/../src/UnnamedProject/Infrastructure/Http/Silex/Application.php';
 
-$entityManager = $app['orm.em'];
+$app = \UnnamedProject\Infrastructure\Http\Silex\Application::getInstance();
 
-return ConsoleRunner::createHelperSet($entityManager);
+return ConsoleRunner::createHelperSet($app['orm.em']);
