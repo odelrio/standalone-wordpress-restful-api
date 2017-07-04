@@ -18,16 +18,14 @@ class PostsController extends Controller
 
     /**
      * PostsController constructor.
-     *
-     * @param Application $app
      */
-    public function __construct(Application $app)
+    public function __construct()
     {
-        $this->app = $app;
+        $this->app = Application::getInstance();
         $this->repository = new SqlPostRepository($this->app->db());
     }
 
-    public function index()
+    public function all()
     {
         $posts = $this->repository->all();
         $projection = [];

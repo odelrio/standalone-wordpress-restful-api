@@ -2,7 +2,8 @@
     "name": "odelrio/standalone-wordpress-restful-api",
     "type": "project",
     "require": {
-        "symfony/http-foundation": "^3.3"
+        "symfony/http-foundation": "^3.3",
+        "phroute/phroute": "v2.1.0"
     },
     "require-dev": {
     },

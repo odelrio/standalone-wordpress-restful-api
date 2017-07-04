@@ -19,16 +19,14 @@ class PostsController extends Controller
 
     /**
      * PostsController constructor.
-     *
-     * @param Application $app
      */
-    public function __construct(Application $app)
+    public function __construct()
     {
-        $this->app = $app;
+        $this->app = Application::getInstance();
         $this->repository = new SqlPostRepository($this->app->db());
     }
 
-    public function index()
+    public function all()
     {
         $posts = $this->repository->all();
         $projection = [];
@@ -44,5 +42,20 @@ class PostsController extends Controller
         }
 
         return $this->ok($projection);
+    }
+
+    public function byYear($year)
+    {
+        // TODO: Implement
+    }
+
+    public function byMonth($year, $month)
+    {
+        // TODO: Implement
+    }
+
+    public function byDay($year, $month, $day)
+    {
+        // TODO: Implement
     }
 }
