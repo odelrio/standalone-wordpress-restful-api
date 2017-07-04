@@ -1,0 +1,24 @@
+{
+    "name": "odelrio/standalone-wordpress-restful-api",
+    "type": "project",
+    "require": {
+        "symfony/http-foundation": "^3.3",
+        "phroute/phroute": "v2.1.0"
+    },
+    "require-dev": {
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pau Sanchez",
+            "email": "pau.sanchez1991@gmail.com"
+        },
+        {
+            "name": "Oriol del Rio",
+            "email": "contact@odelrio.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": { "HyperWP\\" : "src/"}
+    }
+}
