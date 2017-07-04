@@ -1,2 +1,3 @@
 # standalone-wordpress-restful-api
-RESTful and standalone API for retireving Wordpress data
+RESTful and standalone API for retireving Wordpress data.
+### WORK IN PROGRESS
