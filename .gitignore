@@ -1,3 +1,6 @@
+### Config ###
+/config/*
+!/config/config-sample.php
 
 ### Composer ###
 composer.phar
@@ -210,8 +213,8 @@ $RECYCLE.BIN/
 /support/wordpress/wp-content/uploads/
 /support/wordpress/wp-content/wp-cache-config.php
 /support/wordpress/wp-content/plugins/hello.php
-/support/wordpress/wp-content/database/wordpress-local.sqlite
-/support/wordpress/wp-content/database/wordpress.sqlite
+/support/wordpress/wp-content/database/*
+!/support/wordpress/wp-content/database/wordpress-shared.sqlite
 
 /support/wordpress/.htaccess
 /support/wordpress/license.txt

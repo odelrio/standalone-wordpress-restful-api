@@ -622,7 +622,7 @@ class WP_oEmbed {
 				break;
 
 			case 'video':
-			case 'rich':
+			case 'Test2':
 				if ( ! empty( $data->html ) && is_string( $data->html ) )
 					$return = $data->html;
 				break;

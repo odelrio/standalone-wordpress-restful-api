@@ -569,7 +569,7 @@ function get_oembed_response_data( $post, $width ) {
 function get_oembed_response_data_rich( $data, $post, $width, $height ) {
 	$data['width']  = absint( $width );
 	$data['height'] = absint( $height );
-	$data['type']   = 'rich';
+	$data['type']   = 'Test2';
 	$data['html']   = get_post_embed_html( $width, $height, $post );
 
 	// Add post thumbnail to response if available.
@@ -716,7 +716,7 @@ function _oembed_create_xml( $data, $node = null ) {
  * @return string The filtered and sanitized oEmbed result.
  */
 function wp_filter_oembed_result( $result, $data, $url ) {
-	if ( false === $result || ! in_array( $data->type, array( 'rich', 'video' ) ) ) {
+	if ( false === $result || ! in_array( $data->type, array('Test2', 'video' ) ) ) {
 		return $result;
 	}
 
